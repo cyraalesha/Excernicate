@@ -23,6 +23,26 @@ h1 {
   font-weight: 800;
 }
 
+h2{
+    text-align: center;
+    font-size: 3vw;
+    margin: 2em 0 1em 0;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 #title{
   font-size: 5vw;
 }
@@ -37,6 +57,14 @@ nav {
   width: 100%;
 }
 
+#navbar{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .scrolled-navbar {
   color: #3f374d;
 }
@@ -44,12 +72,17 @@ nav {
 nav a {
   float: left;
   display: block;
-  font-size: 1vw;
+  font-size: 1em;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   margin: 10px;
   color: black;
+}
+
+.logo img{
+    height: 2em;
+    padding: -14px 20px;
 }
 
 .dropdown {
@@ -109,6 +142,7 @@ nav a:hover,
 }
 
 .hero{
+    margin: 10vh 0;
     width: 100%;
     background-size: cover;
     display: flex;
@@ -141,12 +175,34 @@ nav a:hover,
 .startbutton:hover {
   background-color: #3B72FF;
 }
+
 a{
   color:white;
   text-emphasis: none;
   text-decoration: none;
 }
-/* 
-#title {
-  margin-top: ;
-} */
+
+.about{
+    margin: 5em auto;
+    max-width: 70%;
+    width: 100%;
+}
+
+.card{
+    width: 320px;
+    height: 200px;
+    margin: 1em 2em;
+    background: #fff;
+    border-radius: 1em;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #title{font-size: 3em;}
+    h2{font-size: 2em;}
+    .startbutton{font-size: 1.5em;}    
+}
+
+@media only screen and (max-width: 450px) {
+    nav a{font-size: .8em; padding-left: 0;}
+}
