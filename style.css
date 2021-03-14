@@ -1,3 +1,7 @@
+:root{
+    --blue:#3B72FF;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,13 +12,7 @@ body{
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-}
-
-.hero{
-    width: 100%;
-    height: 60vh;
-    background: url('img/Background.png');
-    background-size: cover;
+  background: var(--blue);
 }
 
 p{
@@ -102,15 +100,36 @@ nav a:hover,
   display: block;
 }
 
+.bg{
+    width: 100vw;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -2;
+}
 
+.hero{
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 .title {
   display: flex;
-  margin-left: 10%;
   flex-direction: column;
 }
 
+
+.illustration{
+    max-width: 500px;
+    width: 90vw;
+}
+
 .startbutton { 
+ margin-top:1em;
  font-size: 1.5vw;
  background-color: #8C30F5;
  width: max-content;
@@ -120,9 +139,8 @@ nav a:hover,
 }
 
 .startbutton:hover {
-  background-color: rgba(214.00000244379044, 177.0000046491623, 255, 1);
+  background-color: #3B72FF;
 }
-
 a{
   color:white;
   text-emphasis: none;
