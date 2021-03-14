@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercise Translator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercise Translator</title>
+	<link rel="stylesheet" href="exercise.css" type="text/css">
+	<link rel="stylesheet" href="global.css" type="text/css">
 </head>
+
 <body>
- 
-<button type="button" onclick="init()">Start</button>
-<div><canvas id="canvas"></canvas></div>
-<div id="label-container"></div>
+    <nav id="navbar" class="container sticky">
+        <div class="logo">
+        <a href="#home"><img src="img/logo.png" alt="logo"></a>
+        </div>
+		<a href="index.html" class="nav-link">Home</a>
+		<a href="exercise.html" class="nav-link">Workout</a>
+	</nav>
+
+ <div class="opening">
+	<button type="button" onclick="init()">Start</button>
+  </div>
+    <div><canvas id="canvas"></canvas></div>
+    <div id="label-container"></div>
 
 
-
+    
 
 
 <!-- Start script woo -->
@@ -86,7 +99,7 @@
         }
     }
 </script>
-
+    <div class="footer">Copyright &#169; Exernicate. All rights reserved.</div>
   
 </body>
 </html>
