@@ -15,17 +15,16 @@ h2{
 #title{
   font-size: 5vw;
 }
-/* 
+
 .bg{
     width: 100vw;
     position: absolute;
     top:0;
     left: 0;
     z-index: -2;
-} */
+}
 
 .hero{
-    /* background: linear-gradient(#ffffff00 ,#ffffff00, #fff 90%), url('https://img4.goodfon.com/wallpaper/nbig/2/10/vector-abstract-background-design-wavy.jpg');; */
     padding: 8vh 0;
     width: 100%;
     background-size: cover;
@@ -45,16 +44,6 @@ h2{
     width: 100%;
 
 }
-
-.hero svg:nth-child(2){
-   position: absolute;
-    top: 100px ;
-    right: -600px;
-    z-index: -2;
-    width: 1000px;
-
-}
-
     
 .title {
     display: flex;
