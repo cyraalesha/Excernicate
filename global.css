@@ -4,6 +4,10 @@
     font-family: 'Manrope', sans-serif;
 }
 
+button:focus{
+    outline: transparent;
+}
+
 body{
   font-family: 'Manrope', sans-serif;
   width: 100%;
