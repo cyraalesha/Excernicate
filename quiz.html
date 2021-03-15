@@ -22,14 +22,14 @@
 
  <div class="mainsection">
     <div class="opening">
-    <h1>Follow the letter poses to type!</h1>
+    <h1>What is 10+10+19</h1>
+    <h3>A.39  B.20  C.40</h3>
         <button type="button" onclick="init()" id="startbutton">Start</button>
     </div>
     
     <div class="cam">
         <div class="cameradiv">
         <canvas id="canvas"></canvas>
-        <img id="guide" src="img/illustration.png">
         </div>
         <div id="output"></div>
         <div id="label-container"></div>
@@ -98,23 +98,28 @@
             labelContainer.childNodes[i].innerHTML = classPrediction;
 
             const outputlabel = document.getElementById("output");
+            
+            if (prediction[0].probability.toFixed(2) > 0.90) {
+              outputlabel.textContent = "We dont detect a pose";
+              
+            }
 
-            if (prediction[1].probability.toFixed(2) > 0.90) {
-              outputlabel.textContent += "A";
-              setTimeout(function(){ console.log("a") },500000);
-              break;
+
+            if (prediction[1].probability.toFixed(2) > 0.80) {
+              outputlabel.textContent = "correct!!";
+              webcam.stop();
               
             }
 
              if (prediction[2].probability.toFixed(2) > 0.99) {
-             outputlabel.textContent += "B";
-              setTimeout(function(){ console.log("b") },500000);
-              break;
+               outputlabel.textContent = "Oh no you're wrong";
+            
             }
 
              if (prediction[3].probability.toFixed(2) > 0.90) {
-              setTimeout(function(){ outputlabel.textContent += "C"; }, 500000);
-              break;
+
+               outputlabel.textContent = "Oh no you're wrong";
+              
             }
 
             if (prediction[4].probability.toFixed(2) > 0.90) {

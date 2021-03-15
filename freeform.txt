@@ -1,0 +1,7 @@
+const outputlabel = document.getElementById("output");
+
+            if (prediction[i].probability.toFixed(2) > 0.90) {
+              outputlabel.textContent = classPrediction;
+          
+            }
+add this to check for allllll
