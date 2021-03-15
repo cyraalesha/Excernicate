@@ -6,27 +6,38 @@
   /* color: white; */
   font-weight: 200;
 }
+
+#output{
+    width: 70%;
+    height: fit-content;
+    padding: 1em 5em;
+    font-size: 1.5em;
+    margin-top: 2em;
+    text-align: center;
+}
+
 .opening h3{
     margin-bottom: 20px;
 }
 
 nav{
-    background: #fff;
+    background: #f9f9f9;
 }
 
 h1{
-    margin: 2em 0;
+    margin: 2em 0 1em 0;
 }
 
 .cam{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-direction: column;
     flex-wrap: wrap;
     margin: 2em 1em;
 }
 
- #label-container{
+#label-container{
     display: none;
 }
 
@@ -47,7 +58,7 @@ button:hover{
 }
 
 .cameradiv {
-  width: 85%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -64,8 +75,4 @@ button:hover{
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-#output {
-  font-size: 5vw;
 }

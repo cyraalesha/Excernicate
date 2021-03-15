@@ -123,11 +123,13 @@ nav a:hover,
 
 /* footer */
 .footer{
-    margin: 10px 0;
+    padding: 10px 0;
     margin-top: 7em;
     font-size: 0.9em;
     line-height: 40px;
     text-align: center;
-    /* color: #fff; */
+    background: #f9f9f9;
+
+    
 }
 
