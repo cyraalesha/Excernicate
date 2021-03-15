@@ -73,7 +73,7 @@
         }
         
         document.getElementById("startbutton").textContent = 'Stop';
-        document.getElementById("startbutton").onclick = 'none';
+        document.getElementById("startbutton").display = 'none';
     }
 
     async function loop(timestamp) {
@@ -96,26 +96,46 @@
 
             const outputlabel = document.getElementById("output");
 
-            if (prediction[1].probability.toFixed(2) > 0.90) {
+            if (prediction[1].probability.toFixed(2) > 0.70) {
               outputlabel.textContent += "A";
               setTimeout(function(){ console.log("a") },500000);
               break;
               
             }
 
-             if (prediction[2].probability.toFixed(2) > 0.99) {
+             if (prediction[2].probability.toFixed(2) > 0.999) {
              outputlabel.textContent += "B";
               setTimeout(function(){ console.log("b") },500000);
               break;
             }
 
-             if (prediction[3].probability.toFixed(2) > 0.90) {
+             if (prediction[3].probability.toFixed(2) > 0.30) {
               setTimeout(function(){ outputlabel.textContent += "C"; }, 500000);
               break;
             }
 
-            if (prediction[4].probability.toFixed(2) > 0.90) {
+            if (prediction[4].probability.toFixed(2) > 0.30) {
               setTimeout(function(){ outputlabel.textContent += "D"; }, 500000);
+              break;
+            }
+
+            if (prediction[5].probability.toFixed(2) > 0.30) {
+              setTimeout(function(){ outputlabel.textContent += "E"; }, 500000);
+              break;
+            }
+
+            if (prediction[6].probability.toFixed(2) > 0.30) {
+              setTimeout(function(){ outputlabel.textContent += "F"; }, 500000);
+              break;
+            }
+
+            if (prediction[7].probability.toFixed(2) > 0.30) {
+              setTimeout(function(){ outputlabel.textContent += "G"; }, 500000);
+              break;
+            }
+
+            if (prediction[8].probability.toFixed(2) > 0.30) {
+              setTimeout(function(){ outputlabel.textContent += "H"; }, 500000);
               break;
             }
         }
